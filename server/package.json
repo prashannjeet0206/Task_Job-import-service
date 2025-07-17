@@ -4,7 +4,8 @@
   "description": "Job-import-app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
   "keywords": [
     "Nodejs",
@@ -22,5 +23,8 @@
     "mongoose": "^8.16.4",
     "node-cron": "^4.2.1",
     "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
