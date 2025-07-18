@@ -5,8 +5,13 @@ const importJob = require("./Service/jobImport");
 const cron = require("node-cron");
 
 // Server
-app.listen(Port, () => {
-  console.log(`Application running at Port:${Port}`);
+app.listen(Port, "0.0.0.0", () => {
+  console.log("Server running on port 5000");
+});
+
+// testing
+app.get("/", (req, res) => {
+  res.json({ message: "Testing docker" });
 });
 
 // Database
